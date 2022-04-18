@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Torneio de Futebol</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="icon.png" sizes="32x32"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="customizado.js"></script>
+    </head>
+    <body align="center" style="background-color:lightgrey;overflow-x:hidden;">
+        <br>
+        <h1 style="display:inline;border:solid 4px;border-radius: 7.5px">Torneio de Futebol de Pontos Corridos</h1>
+        
+        <div class="form-group" align="center">
+            <br>
+            <div class="row">
+                <label>Insira uma lista de times e seu respectivo estado separados por ";"</label>                
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <textarea class="form-control" id="times_estados" style="border-color: black" rows="6"></textarea>
+                    </div>
+                </div>                               
+            </div>
+            <br>
+            <div class="col-sm-1">
+                <button type="button" class="btn btn-success" onclick="confereTextArea();">Conferir</button>
+            </div> 
+            <br>
+            <div class="row justify-content-center vencedor">
+                <div class="col-sm-4 vencedorcor" >
+                    <label id="campeao">VENCEDOR :</label>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-sm-5">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" id="tab_jogos">
+                            <thead>
+                                <tr>
+                                    <th width="">
+                                        Time 1
+                                    </th>
+                                    <th><!--GOLS--></th>
+                                    <th>
+                                        X
+                                    </th>
+                                    <th><!--GOLS--></th>
+                                    <th width="" style="text-align:right">
+                                        Time 2
+                                    </th>
+                                    <th width="20%" style="text-align:center">
+                                        RODADA
+                                    </th>
+                                    <th width="20%" style="text-align:center">
+                                        ESTADO
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
